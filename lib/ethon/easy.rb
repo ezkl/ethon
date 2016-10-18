@@ -3,6 +3,7 @@ require 'ethon/easy/features'
 require 'ethon/easy/callbacks'
 require 'ethon/easy/options'
 require 'ethon/easy/header'
+require 'ethon/easy/resolve'
 require 'ethon/easy/util'
 require 'ethon/easy/params'
 require 'ethon/easy/form'
@@ -37,6 +38,7 @@ module Ethon
     include Ethon::Easy::Callbacks
     include Ethon::Easy::Options
     include Ethon::Easy::Header
+    include Ethon::Easy::Resolve
     include Ethon::Easy::Http
     include Ethon::Easy::Operations
     include Ethon::Easy::ResponseCallbacks
